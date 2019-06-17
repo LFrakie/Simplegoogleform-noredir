@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="es" >
-
 <head>
   <meta charset="UTF-8">
-  <title>FORMULARIOS</title>
+  <title>Google Form no redir</title>
 </head>
 
 <body>
 
-<div class="td-button" data-download-link="https://www.youtube.com" id="nakshakra-template">
-</div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd93jt02dP_gXDFhcMxFyKEfya62Cvp9yL5cR0JkEBZOSkiYg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+  
+         <div>   
+              <input type="text" name="entry.691025335" placeholder="NOMBRE"/>
+              <input type="text" name="entry.1975065379" placeholder="NUMERO"/>
+         </div>
 
- <form action="https://docs.google.com/forms/d/e/1FAIpQLSd93jt02dP_gXDFhcMxFyKEfya62Cvp9yL5cR0JkEBZOSkiYg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="tdform-form">
-        
+        <input type="submit" name="submit" value="Enviar" onclick="window.location = 'https://www.google.com'"/>
 
-        <div class="">   
+    </form>
 
-          <input type="text" name="entry.691025335" value="" id="tdform-entry-name" title="" placeholder="NOMBRE" required />
-        </div>
-
-
-        <div class="">
-          
-          <input type="text" name="entry.1975065379" value="" id="tdform-entry-webaddress" title="" placeholder="NUMERO" required />
-        </div>
-
-
-        <input type="submit" name="submit" value="Enviar" onclick="window.location = 'https://www.youtube.com'" id=""/>
-      </form>
-
-    <div id="tdform-questions">
-
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){dosome()}"></iframe>
-   
+    <div>
+      <iframe name="hidden_iframe" style="display:none;" onload="if(submitted){dosome()}"></iframe>
     </div>
-    
-    <h2>Prueba (respuestas)</h2>
-</body>
 
+</body>
 </html>
